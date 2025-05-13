@@ -14,7 +14,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }} # 같은 워크플로우에 같은 브랜치면
   cancel-in-progress: true  # 이미 실행 중인 이전 워크플로우를 취소합니다
 
-needs: my-job
 
 jobs:
   my-job:
